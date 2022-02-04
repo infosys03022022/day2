@@ -1,0 +1,106 @@
+Programming using Java course: 
+
+https://lex.infosysapps.com/en/app/toc/lex_auth_012880464547618816347/overview
+------------------------------------------------------------------------------------------------------
+DBMS Part1 : https://lex.infosysapps.com/en/app/toc/lex_auth_01275806667282022456/overview
+DBMS Part2: https://lex.infosysapps.com/en/app/toc/lex_auth_0127673005629194241/overview
+
+Cloud Computing and Cyber Security: https://lex.infosysapps.com/en/app/toc/lex_auth_01255932461115801653/overview
+------------------------------------------------------------------------------------------------------
+/*
+ *  The example is with the default package. 
+ *  For default package we don't provide any package name.
+ * 
+ * */
+public class Hello {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       System.out.println("Hello");
+	}
+
+}
+-----------------------------------------------------------------------------------------------------
+
+
+/*
+ * We dont have any compilation.
+ *   * compilation error is seen when.
+ *    ** keywords are not with proper case and spelling.
+ *    ** braces or brackets are not properly closed.
+ *To run a java program we need to have the main method.    
+ */
+public class Hello2 {
+
+}
+--------------------------------------------------------------------------------------------------
+() ===> prantheses along with methods and within this we may have arguements/parameters or we
+        may not have.
+{} ====> braces  ( to have the content of a class and to have the content of a method)
+-------------------------------------------------------------------------------------------------
+We can have many main methods in different classes in the same project maybe in the same package or different package but for execution we require only one.
+----------------------------------------------------------------------------------------------------
+We have 8 primitive datatypes in Java
+
+char
+byte
+short
+int
+long
+float
+double
+boolean
+-------------------------------------------------------------------------------------------------
+currently we have started declaring variables locally. ( locally means within a method.
+Currently in main method ).
+------------------------------------------------------------------------------------------------------
+The local variables need to be initialized before the access.
+-----------------------------------------------------------------------------------------------
+let us move away from the main method. So we are planning to have some more methods apart from 
+main.
+Currently we are making other methods also with static modifier.
+There is a concept where we say static method can only call static methods.
+We cannot call non static method from a static method.
+Similarly static method cannot access non static member variables.
+
+
+package infosys.com.day2.methods;
+
+public class Demo1 {
+
+	// This a method being defined as add
+	// public ===> is an access specifier
+	// static===> is a modifier 
+	// void ====> is a return type
+	// add===> add is a method name
+	//with method we follow the convention of 
+	// writing the word entirely in small case
+	// num1,num2 and result are local variable
+	// to add method
+	// Output as 30
+	public static void add()  
+	{
+		int num1=10;   
+		int num2=20;
+		int result=num1+num2;
+		System.out.println(result);
+	}
+	
+	public static void main(String[] args) {
+		   add(); // method call to add method    
+	}
+
+}
+---------------------------------------------------------------------------
+* method without return value and without parameters
+* method with return value but with no parameters
+* method without return value and with parameter
+* method with return value and with parameters
+---------------------------------------------------------------------------
+Can we declare a variable outside the the methods?
+ans: yes ( member variables of a class)
+----------------------------------------------------------------------------
+Can we access non static member from static main?
+ans yes after creating an object of the class.
+------------
+
+
